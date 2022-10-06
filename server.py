@@ -1,10 +1,13 @@
 
 import email
 from email import message
+from operator import sub
 from flask import Flask, render_template, url_for, request, redirect
 import csv
 
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def my_home():
@@ -29,7 +32,7 @@ def write_to_csv(data):
         csv_writer = csv.writer(database2, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email,subject,message])
 
-@app.route('/submit_form', methods=['POST', 'GET'])
+@app.route('/submit_form', methods=['GET', 'POST'])
 def submit_form():
     if request.method == 'POST':
         data = request.form.to_dict()
