@@ -4,7 +4,7 @@ from email import message
 from operator import sub
 from flask import Flask, render_template, url_for, request, redirect
 import csv
-
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
@@ -37,6 +37,7 @@ def submit_form():
     if request.method == 'POST':
         data = request.form.to_dict()
         write_to_csv(data)
+        
         return redirect('/thankyou.html')
     else:
         return 'something went wrong'
