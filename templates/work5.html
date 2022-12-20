@@ -17,7 +17,9 @@
 
   <title>Title page</title>  
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./static/main.3f6952e4.css" rel="stylesheet">
+<link href="./static/work5.css" rel="stylesheet">
+</head>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -162,7 +164,7 @@
     TCP,	UDP,	IP,	ICMP,	IGMP,	ARP <br>
     All	but	ARP	have	an	IANA	assigned	protocol	number	(protocol	ID) <br> <br>
     </h3>
-    <h3 class="text-center">Connection-Oriented	vs.	Connectionless</h3>
+    <h3 class="text-center">Connection-Oriented	and	Connection-less</h3>
     <h3> <u> What	is	a	Connection-Oriented	Protocol?</u> <br>
       <ul>
         <li>Attempts	to	ensure	reliability	and	completeness	of	transmission</li>
@@ -172,9 +174,53 @@
         <li>Responds	to	requests	from	the	other	side</li>
         <li>Used	when	reliability	is	more	important	than	performance</li>
       </ul>
-    
     </h3>
-
+    <h3><u>What	is	a	Connection-less	Protocol?</u> <br>
+      <ul>
+        <li>Makes	no	attempt	to	ensure	completeness	of	the	transmission</li>
+        <li>No	handshake</li>
+        <li>Expects	higher	level	protocols	or	the	app	to	request	resends	if	some	
+          of	the	data	did	not	arrive</li>
+          <li>Used	when	performance	is	more	important	than	reliability,
+            such as: Real-time	voice	or	video</li>
+      </ul>
+    </h3>
+    <h3 class="text-center">Connection-Oriented	vs.	Connection-less</h3>
+    <table>
+      <tr>
+      <th>Connection-Oriented</th>
+      <th>Connection-less</th>
+    </tr>
+    <tr>
+      <td>TCP</td>
+      <td>UDP,	IP,	ICMP,	IGMP,	ARP</td>
+    </tr>
+    <tr>
+      <td>Handshake	to	set	up	/	tear down	session</td>
+      <td>No	handshake</td>
+    </tr>
+    <tr>
+      <td>Flow	control /	error	correction</td>
+      <td>No	flow	control	/	error	correction</td>
+    </tr>
+    <tr>
+      <td>“Reliable”</td>
+      <td>“Unreliable”</td>
+    </tr>
+    <tr>
+      <td>Focus	on	receiving all	the	data</td>
+      <td>Focus on	speed/performance</td>
+    </tr>
+    <tr>
+      <td>Used for	downloading	files	including	
+        web	pages,	emails,	file	transfers,	videoon-demand,	remote	control</td>
+      <td>Used	for	real-time	communications	that	
+        are	time sensitive,	and/or	can	tolerate	
+        some	loss
+        VoIP and	video	conferences,	SNMP,	DNS,	
+        DHCP	</td>
+    </tr>
+    </table>
     <h2>Networking Concepts.</h2><br>
     
     <h2>Infrastructure(Cables, Connectors and Networking Devices).</h2> <br>
