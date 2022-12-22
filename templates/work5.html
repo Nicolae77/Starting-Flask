@@ -273,7 +273,8 @@
         <li> Does	not	have	an	assigned	protocol	number</li>
     </ul>
     </h3> <br>
-    <h3 class="text-center">Layer	7	Remote	Control	Protocols <br>
+    <h3 class="text-center">Layer	7	Remote	Control	Protocols</h3>
+
     <h3> Telnet <br>
       <ul>
         <li> Old	style	remote	control	protocol</li>
@@ -402,11 +403,64 @@
       <li>The	SIP	protocol	is	a	member	of	the	VOIP	Protocol	Family	</li>
       <li>TCP	and	UDP	5060	(unencrypted)	and	5061	(TLS	encrypted)</li>
   </ul>
-</h3>
-
-
-
 </h3> <br>
+<h3 class="text-center">Layer	7	Infrastructure	Management	Protocols </h3>
+<h3>Dynamic	Host	Configuration	Protocol	(DHCP)
+  <ul>
+    <li>An	automated	way	to	assign	IP	addresses	to	hosts	on	a	network</li>
+    <li>Clients	request	an	IP	address	from	any	listening	DHCP	server</li>
+    <li>DHCP	server	has	pre-configured	pool	of	available	IP	addresses</li>
+    <li>Server	leases	an	address	for	a	limited	time	to	the	client</li>
+    <li>Communications	are	by	broadcast	in	clear	text	with	no	authentication</li>
+    <li>UDP	67	is	the	destination	port	of	a	server</li>
+    <li>UDP	68	is	used	by	the	client</li>
+  </ul>
+</h3>
+</h3>
+<h3>Domain	Name	System	(DNS)
+<ul>
+  <li>A	hierarchical	decentralized	naming	system	for	computers,	services,	or	
+    other	resources	connected	to	the	Internet	or	a	private	network</li>
+    <li>Used	for	human	convenience</li>
+    <li>Maps	names	to	IP	addresses</li>
+    <li>Uses	UDP	and	TCP	port	53</li>
+</ul>
+</h3>
+<h3>Simple	Network	Management	Protocol	(SNMP)
+<ul>
+  <li>Used	to	monitor	and	manage	devices	on	networks</li>
+  <li>SNMP	manager	uses	a	management	information	base	(MIB)	to	ask	an	
+    agent	service	on	devices/servers/services	about	their	current	status</li>
+</ul>
+</h3>
+<h3>Network	Time	Protocol	(NTP)
+  <ul>
+    <li>Widely	deployed	time	synchronization	service</li>
+    <li>UDP	123</li>
+    <li>Sent	in	clear	text</li>
+    <li>Security	concerns;	Man-in-the-middle,	DDoS,	stack	overflows</li>
+  </ul>
+</h3>
+<h3>Simple	Network	Time	Protocol	(SNTP)
+  <ul>
+    <li> A	less	complex	implementation	of	NTP</li>
+    <li>Uses	the	same	protocol	but	without	requiring	the	storage	of	state	
+      over	extended	periods	of	time	
+    </li>
+  </ul>
+</h3>
+<h3>Lightweight	Directory	Access	Protocol	(LDAP)
+  <ul>
+    <li>Search	and	copy	data	from	directory	services</li>
+    <li>TCP	389</li>
+  </ul>
+</h3>
+<h3>Lightweight	Directory	Access	Protocol	Secure	 (LDAPS)
+  <ul>
+    <li>LDAP	over	SSL</li>
+    <li>TCP	636</li>
+  </ul>
+</h3>
 
     <h2>Networking Concepts.</h2><br>
     
