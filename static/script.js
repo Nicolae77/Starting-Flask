@@ -94,6 +94,22 @@ const quizData =[
          C: "Dev/Test Pricing",
          d: "15% Discount on Public Prices",
          correct: "d",
+     },
+     {
+        question: "What method offers the highest level of availability in the Azure cloud?",
+         a: "Distributing your virtual machines in different update domains and fault domains",
+         b: "Distributing you application layer in different availability sets",
+         C: "Distributing replicas of your virtual machines in different availability zones",
+         d: "Deploying copies of your entire application into different regions",
+         correct: "d",
+     },
+     {
+        question: "",
+         a: "",
+         b: "",
+         C: "",
+         d: "",
+         correct: "",
      }
      
 ]
