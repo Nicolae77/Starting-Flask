@@ -104,6 +104,14 @@ const quizData =[
          correct: "d",
      },
      {
+        question: "Azure Advisor provides recommendations on all of the following areas except which one?",
+         a: "Reliability",
+         b: "Cost",
+         C: "Performance",
+         d: "Monitoring",
+         correct: "d",
+     },
+     {
         question: "",
          a: "",
          b: "",
