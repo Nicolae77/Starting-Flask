@@ -240,7 +240,7 @@ const quizData =[
          correct: "b",
      },
      {
-        question: "Which Azure storage supports managing asynchronous tasks and buiding process workflows?",
+        question: "Which Azure storage supports managing asynchronous tasks and building process workflows?",
          a: "Blob storage",
          b: "Queue storage",
          C: "File starage",
@@ -248,7 +248,7 @@ const quizData =[
          correct: "b",
      },
      {
-        question: "_____ preventresources from being accidentally deleted or changed.",
+        question: "_____ prevent resources from being accidentally deleted or changed.",
          a: "Azure Blueprints",
          b: "Azure Policy",
          C: "Resource Locks",
@@ -348,7 +348,7 @@ const quizData =[
          a: "The Azure customer",
          b: "Both Microsoft Azure and the Azure customer",
          C: "The tird-party hardware manufacturer",
-         d: "Microsof tAzure",
+         d: "Microsoft Azure",
          correct: "d",
      },
      {
@@ -366,7 +366,162 @@ const quizData =[
          C: "Improved resilience",
          d: "Improved scalability",
          correct: "a",
+     },
+     {
+        question: "Your organization needs to develop a storage tier policy for data that is considered to be short-term backup and disaster recovery data. Which storage tier would you assign to this data?",
+         a: "hot",
+         b: "cool",
+         C: "warm",
+         d: "archive",
+         correct: "b",
+     },
+     {
+        question: "Which Azure service is an example of the Platform-as-a-Service(PaaS) model?",
+         a: "Azure App Service",
+         b: "Azure Virtual Networks",
+         C: "Azure Virtual Machines",
+         d: "Azure Data Box",
+         correct: "a",
+     },
+     {
+        question: "Integrating Azure PaaS services with Microsoft Defender for Cloud apps Allows you to also identify anomalies in Azure ____ logs.",
+         a: "portal",
+         b: "threat",
+         C: "security",
+         d: "activity",
+         correct: "d",
+     },
+     {
+        question: "Which of the following tools or services is an authorization system that is built on an Azure Resource Manager and that provides fine-grained access management for Azure resources?",
+         a: "ARM template",
+         b: "Azure AD",
+         C: "Azure RBAC",
+         d: "Microsoft Defender for Cloud",
+         correct: "c",
+     },
+     {
+        question: "The cost of an Azure virtual network gateway is based on which of the following?",
+         a: "Hourly compute costs and egress data transfer",
+         b: "Hourly compute costs and inbound Inter-Vnet data transfer",
+         C: "Hourly compute costs only",
+         d: "Inbound Inter-VNet data transfer",
+         correct: "a",
+     },
+     {
+        question: "Which statement is true when it comes to Cloud expenditure?",
+         a: "Cloud computing offers a reduction in your capex spend",
+         b: "Cloud computing offers a reduction in your opex spend",
+         C: "Cloud computing offers a reduction in both your capex and opex spend",
+         d: "Cloud computing offers a comparable spend between your existing on-premise environment.",
+         correct: "a",
+     },
+     {
+        question: "In federated identity management, _____ is one point of entry that combines access to multiple resources behind it.",
+         a: "single registration",
+         b: "single sign-on",
+         C: "flow Control",
+         d: "proxy sign-on",
+         correct: "b",
+     },
+     {
+        question: "In Azure, if you delete a virtual machine, what happens to its data disks?",
+         a: "The data disk are not deleted",
+         b: "The data disks are only deleted if you selected that configuration option for the VM.",
+         C: "The data disks are deleted",
+         d: "The data disks are deleted but their data may be recoverable.",
+         correct: "b",
+     },
+     {
+        question: "What is the goal of high availability and fault tolerance?",
+         a: "to keep your system up and running should something fail within your architecture",
+         b: "to prevent hardware from failling",
+         C: "to keep the integrity of data intact in the event of a system failure",
+         d: "to keep the privacy of data intact in the event of a security breach",
+         correct: "a",
+     },
+     {
+        question: "Which statement regarding Root Management Groups within Azure Management Groups is correct?",
+         a: "Everyone is given default access to the root management group",
+         b: "Azure subscriptions and management group can be connected to more than one root management group",
+         C: "Policy assignments on the root management group apply to all related directory resources.",
+         d: "The root management group can be moved and deleted",
+         correct: "c",
+     },
+     {
+        question: "In an Azure Virtual Network, what term describes the feature used to host the DNS records for a particular Domain?",
+         a: "DNS Zone",
+         b: "DNS Bucket",
+         C: "DNS VNet",
+         d: "DNS Squatting",
+         correct: "a",
+     },
+     {
+        question: "How does Azure Resource Manager enable control over access to specific actions to resources?",
+         a: "Resource Manager uses encryption to secure resources",
+         b: "Resource Manager uses exported key private and public key pairs for each action request",
+         C: "Resource Manager natively integrates and applies role-based access (RBAC) into the management platform and services",
+         d: "Resource Manager uses an API user ID and password pair to secure the entire infrastructure",
+         correct: "c",
+     },
+     {
+        question: "You are the administrator and need to assign a role to a new employee. The employee is responsable for managing the configurations of all virtual machines. To which role should you assign them?",
+         a: "Virtual Machine Contributor",
+         b: "Virtual Machine User",
+         C: "Virtual Machine Administrator",
+         d: "Classic Virtual Machine Contributor",
+         correct: "a",
+     },
+     {
+        question: "You can connect Azure VNets located in two different regions by using _____.",
+         a: "virtual secure connections",
+         b: "management group regional peering",
+         C: "global virtual network peering",
+         d: "resource group links",
+         correct: "c",
+     },
+     {
+        question: "Under which circumstance should you configure your Blob storage account as a hot storage tier?",
+         a: "Your older media content that, while not accessed frequently, is expected to be available when needed.",
+         b: "You want to migrate towards lower storage costs",
+         C: "You have data in this account that is in active use",
+         d: "You store your backup, archival, and disaster recovery datasets with this account",
+         correct: "c",
+     },
+     {
+        question: "Acording to Microsoft Azure's shared responsibility model, which Azure cloud service model places the most responsibility regarding security and operations on Microsoft Azure rather than the customer?",
+         a: "PaaS",
+         b: "SaaS",
+         C: "IaaS",
+         d: "FaaS",
+         correct: "b",
+     },
+     {
+        question: "What benefit does agility provide in the Azure cloud?",
+         a: "To ensure your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong",
+         b: "To ensure applications are deployed knowing that your data is safe in the event that disaster should occur",
+         C: "To ensure cloud-based resources can be deployed and configured quickly as your application requirements change",
+         d: "To ensure cloud-based applications can be configured to always have the resources they need",
+         correct: "c",
+     },
+     {
+        question: "Which of the following blob types is not provided by Azure Blob Storage?",
+         a: "Block blobs",
+         b: "Simple blobs",
+         C: "Append blobs",
+         d: "Page blobs",
+         correct: "b",
+     },
+     {
+        question: "",
+         a: "",
+         b: "",
+         C: "",
+         d: "",
+         correct: "",
      }
+     
+     
+     
      
 
      
@@ -384,7 +539,7 @@ const submitBtn = document.getElementById('submit')
 
 let currentQuiz = 0
 let score = 0
-
+let wrong_answer = 0
 loadQuiz()
 
 function loadQuiz(){
@@ -418,6 +573,11 @@ submitBtn.addEventListener('click', () => {
         if(answer === quizData[currentQuiz].correct){
             score++
         }
+
+        if(answer !== quizData[currentQuiz].correct){
+            wrong_answer++
+        }
+
         currentQuiz++
 
         if(currentQuiz < quizData.length){
@@ -425,7 +585,7 @@ submitBtn.addEventListener('click', () => {
         }else{
             quiz.innerHTML = `
             <h2> You answer ${score}/${quizData.length} question correctly</h2>
-
+            <h2> You did not answered ${wrong_answer}</h2>
             <button onclick="location.reload()">Reload</button>
 
             `
