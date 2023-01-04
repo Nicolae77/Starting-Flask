@@ -512,6 +512,142 @@ const quizData =[
          correct: "b",
      },
      {
+        question: "Microsoft Azure combines which of the following components within an availability set to manage planned and unplanned outages?",
+         a: "Recommended regions and alternate regions",
+         b: "Update domains and faultdomains",
+         C: "Foundational services and specialized services",
+         d: "Virtual Machines Scaling and specialized services",
+         correct: "b",
+     },
+     {
+        question: "You are an IT administrator for a small organization with an Azure account. You need 500 TB of on-premises data. The organization's bandwidth is 1 Gbps. Which storage transfer service should you use?",
+         a: "Network transfer",
+         b: "Data Box Disk",
+         C: "Data Box",
+         d: "Data Box Heavy",
+         correct: "d",
+     },
+     {
+        question: "The _____authentication method in Azure removes the password and replace it with something you have, plus something you are or something you have.",
+         a: "multi-factor(MFA)",
+         b: "passwordless",
+         C: "security question",
+         d: "encrypted",
+         correct: "b",
+     },
+     {
+        question: "_____ provides centralized security management for users' devices with Azure Directory(Azure AD)",
+         a: "Virtual Machines",
+         b: "Virtual Desktop",
+         C: "Containers",
+         d: "Azure Functions",
+         correct: "b",
+     },
+     {
+        question: "Why does Microsoft recommend a minimum 300 miles distance between datacenters in an Azure regional pair?",
+         a: "The distance is required to successfully implement geo-redundant storage",
+         b: "The distance provides optimal separation for planned updates to be simultaneously applied to both regions",
+         C: "The distance reduces the likelihood of power or network outages affecting both regions at once",
+         d: "The distance minimizes the latency of requests between resources in paired regions.",
+         correct: "c",
+     },
+     {
+        question: "What is scalability of Azure service?",
+         a: "Pay only for the resources you use",
+         b: "Rapidly increase or decrease the number of Azure resources based on demand.",
+         C: "Inexpensively deploy compute, storage, and network resources without capital investment",
+         d: "Is a service that requires hardware.",
+         correct: "b",
+     },
+     {
+        question: "Which of the following is not a characteristic of the public cloud?",
+         a: "Scalability",
+         b: "Shared Infrastructure",
+         C: "One-time costs for virtual resources",
+         d: "Utility-based metering",
+         correct: "c",
+     },
+     {
+        question: "Your company has recently increased its security posture and needs to protect application passwords. Which Azure service should you use?",
+         a: "Azure Application Gateway",
+         b: "Azure Key Vault",
+         C: "Azure Information Protection",
+         d: "Azure DDoS Protection",
+         correct: "b",
+     },
+     {
+        question: "When you transfer data from an Azure resource, it's known as _____ trafic.",
+         a: "external",
+         b: "internal",
+         C: "ingress",
+         d: "egress",
+         correct: "d",
+     },
+     {
+        question: "Which statement correctly describes how Azure regions provide additional resilience with Availability Zones?",
+         a: "Each regions that supports availability zones includes a minimum of three separate availability zones",
+         b: "Each regions that supports availability zones includes a maximum of three separate availability zones",
+         C: "Every region in the Microsoft Azure cloud includes a minimum of three availability zones",
+         d: "Every region in the Microsoft Azure cloud includes a minimum of two availability zones",
+         correct: "a",
+     },
+     {
+        question: "Which Azure product is a general-purpose tool for figuring out how much any given Azure service will cost?",
+         a: "Advisor",
+         b: "Total Cost of Ownership Calculator",
+         C: "Pricing Calculator",
+         d: "Cost Management",
+         correct: "c",
+     },
+     {
+        question: "Which of the following should you enable to link a service that's powered by Azure Private Link?",
+         a: "public endpoin",
+         b: "private endpoint",
+         C: "A virtual private network (VPN)",
+         d: "A public network",
+         correct: "b",
+     },
+     {
+        question: "A company needs to rapidly deploy compute resources with customized operating systrems and built-in software that installs automatically upon start up. Which cloud deployment model should this company use?",
+         a: "IaaS",
+         b: "PaaS",
+         C: "SaaS",
+         d: "FaaS",
+         correct: "a",
+     },
+     {
+        question: "Your organization uses Azure as its cloud provider. The organization has deployed a virtual machine and installed a SQL database on it. Who is responsible for the data that gets ingested into the database?",
+         a: "The cloud provider",
+         b: "The organization using Azure",
+         C: "Both the cloud service provider and the organization",
+         d: "Athird party data management company",
+         correct: "b",
+     },
+     {
+        question: "Considering Azure's Shared Responsibility Model, what are Azure customer's security responsibility in a PaaS service?",
+         a: "In a PaaS solution, Microsoft Azure is completely responsible for security",
+         b: "In a PaaS solution,Azure customers is completely responsible for security",
+         C: "In PaaS solution, Azure customers are partially responsible for securing their applications",
+         d: "In PaaS solution, Azure customers are completely responsible for securing their applications",
+         correct: "c",
+     },
+     {
+        question: "A company needs to increase an application's computing capacity by adding RAM and/or CPUs to an existing Azure virtual machine instance that has been deployed in the Azure cloud. Completing this task is an example of _____ .",
+         a: "elasticity",
+         b: "agility",
+         C: "vertical scaling",
+         d: "horizontal scaling",
+         correct: "c",
+     },
+     {
+        question: "",
+         a: "",
+         b: "",
+         C: "",
+         d: "",
+         correct: "",
+     },
+     {
         question: "",
          a: "",
          b: "",
@@ -519,12 +655,9 @@ const quizData =[
          d: "",
          correct: "",
      }
-     
-     
-     
-     
-
-     
+      
+      
+       
      
 ]
 
@@ -574,10 +707,6 @@ submitBtn.addEventListener('click', () => {
             score++
         }
 
-        if(answer !== quizData[currentQuiz].correct){
-            wrong_answer++
-        }
-
         currentQuiz++
 
         if(currentQuiz < quizData.length){
@@ -585,7 +714,6 @@ submitBtn.addEventListener('click', () => {
         }else{
             quiz.innerHTML = `
             <h2> You answer ${score}/${quizData.length} question correctly</h2>
-            <h2> You did not answered ${wrong_answer}</h2>
             <button onclick="location.reload()">Reload</button>
 
             `
