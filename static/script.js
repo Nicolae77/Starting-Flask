@@ -912,24 +912,46 @@ const quizData =[
          correct: "d",
      },
      {
-        question: "",
-         a: "",
-         b: "",
-         C: "",
-         d: "",
-         correct: "",
+        question: "Which Azure Storage replication option provides maximum durability within a single region?",
+         a: "Geo-Redundant Storage(GRS)",
+         b: "Locally Redundant Storage(LRS)",
+         C: "Read-Access Ge0-Redundant Storage(RA-GRS)",
+         d: "Zone-Redundant Storage(ZRS)",
+         correct: "d",
      },
      {
-        question: "",
-         a: "",
-         b: "",
-         C: "",
-         d: "",
+        question: "Which Azure Blob Storage tier should be reserved for data that needs to be kept but, when needed, isn't need immediately",
+         a: "Premium",
+         b: "Archive",
+         C: "Cool",
+         d: "Hot",
+         correct: "b",
+     },
+     {
+        question: "Complete the following statement: Authentication determines _____ .",
+         a: "what you can do",
+         b: "who you are",
+         C: "where you are",
+         d: "the number and type of resurces you create, update, or delete",
+         correct: "b",
+     },
+     {
+        question: "You are an Azure administrator for an organization. You want to find out whether is a problem with one of the virtual machines(VMs) in your environment. Which monitoring feature should you use?",
+         a: "Email Alerts",
+         b: "Metrics",
+         C: "Application Insights",
+         d: "Resource Health",
+         correct: "d",
+     },
+     {
+        question: "Which of the following is not available for virtual machines in all Azure Regions?",
+         a: "availability zones",
+         b: "availability sets",
+         C: "update domains",
+         d: "fault domains",
          correct: "",
      }
-      
-       
-          
+            
      
 ]
 
