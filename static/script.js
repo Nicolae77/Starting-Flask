@@ -894,6 +894,38 @@ const quizData =[
          C: "Azure Active Directory",
          d: "Identity and Active Management",
          correct: "b",
+     },
+     {
+        question: "Which service simplifies the process of configuring deploying and managing a simple containerized application on the Azure cloud?",
+         a: "Azure Container Instances",
+         b: "Azure Functions",
+         C: "Azure App Service",
+         d: "Azure Pipelines",
+         correct: "a",
+     },
+     {
+        question: "Multiple requirements must be met to correctly resize an Azure Virtual Machine, and potential issues may occur due to resizing the instance. Which of the following is not a requirement and/or would not occur?",
+         a: "You will lose your dynamic public IP address if you deallocate your instance",
+         b: "If your existing instance has premium storage, the resize instance must support it as well",
+         C: "Resizing an instance in a availability set may require deallocating resizing all instances in the availability set",
+         d: "Resizing an instance means all data stored on your OS and data disk will be lost",
+         correct: "d",
+     },
+     {
+        question: "",
+         a: "",
+         b: "",
+         C: "",
+         d: "",
+         correct: "",
+     },
+     {
+        question: "",
+         a: "",
+         b: "",
+         C: "",
+         d: "",
+         correct: "",
      }
       
        
