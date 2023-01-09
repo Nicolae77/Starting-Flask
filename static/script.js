@@ -949,7 +949,7 @@ const quizData =[
          b: "availability sets",
          C: "update domains",
          d: "fault domains",
-         correct: "",
+         correct: "a",
      }
             
      
