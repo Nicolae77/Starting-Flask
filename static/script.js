@@ -1072,11 +1072,11 @@ const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 1;
-let score = 0;
+let score = 1;
 let wrong_answers = [];
 let correct_answers = [];
 
-const DEFAUT_QUESTIONS_NO = 10;
+const DEFAUT_QUESTIONS_NO = null;
 const QUESTIONS_NO = DEFAUT_QUESTIONS_NO || quizData.length - 1;
 
 loadQuiz();
@@ -1144,14 +1144,20 @@ submitBtn.addEventListener("click", (ev) => {
                 </li>`);
             });
             quiz.innerHTML = `
+            <div id="myDIV">
+            <div id="content">
             <h2> You answer ${score}/${QUESTIONS_NO} question correctly</h2>
             
-            <p class="correct_answers">Wrong answers:</p>
+           <h3 class="correct_answers"> Wrong answers:${wrong_answers.length}</h3>
             <ul class="wrongAnswerList">
                 ${wrongQuestionsText.join("<br>")}
             </ul>
+            </div>
+            </div>
 			<button onclick="location.reload()">Reload</button>`;
+            
 		}
 		
     }
 });
+
