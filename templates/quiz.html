@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
-  <link href="./static/main.3f6952e4.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./static/main.3f6952e4.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./static/assets/apple-icon-180x180.png"
+    />
+    <link href="./static/assets/favicon.ico" rel="icon" />
     <title>Quiz Azure App</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar  navbar-fixed-top navbar-inverse">
-          <div class="container">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-      
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-              <ul class="nav navbar-nav ">
-                <li><a href="./index.html" title=""> Home</a></li>
-                <li><a href="./works.html" title=""> Works</a></li>
-                <li><a href="./about.html" title=""> About me</a></li>
-                <li><a href="./contact.html" title=""> Contact</a></li>
-              </ul>
-      
-      
-            </div> 
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html" title=""> Home</a></li>
+              <li><a href="./works.html" title=""> Works</a></li>
+              <li><a href="./about.html" title=""> About me</a></li>
+              <li><a href="./contact.html" title=""> Contact</a></li>
+            </ul>
           </div>
-        </nav>
-      </header>
-<div class="quiz-container" id="quiz">
-    <div class="quiz-header">
-        <h2 id="question"> Question Text</h2>
+        </div>
+      </nav>
+    </header>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 class="question">Question Text</h2>
         <ul>
-            <li>
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Answer</label>
-            </li>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer</label>
+          </li>
 
-            <li>
-                <input type="radio" name="answer" id="b" class="answer">
-                <label for="b" id="b_text">Answer</label>
-            </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer</label>
+          </li>
 
-            <li>
-                <input type="radio" name="answer" id="c" class="answer">
-                <label for="c" id="c_text">Answer</label>
-            </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer</label>
+          </li>
 
-            <li>
-                <input type="radio" name="answer" id="d" class="answer">
-                <label for="d" id="d_text">Answer</label>
-            </li>
-
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer</label>
+          </li>
         </ul>
+      </div>
+      <button id="submit">Submit</button>
     </div>
-    <button id="submit">Submit</button>
-</div>
-
 
     <script src="./static/script.js"></script>
-</body>
+  </body>
 </html>
