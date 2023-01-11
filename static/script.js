@@ -2,7 +2,7 @@ const quizData = [
     {
         question:
             "Which statement describes the benefit of making your applications redundant across Azure regional pairs?",
-        a: "Regional pairs are inthe same geographical area, so they share the same power infrastructure.",
+        a: "Regional pairs are in the same geographical area, so they share the same power infrastructure.",
         b: "In the event of a multi-regional outage, Microsoft will prioritize the recovery of one region in each pair.",
         c: "Regional pairs allow planned Azure system updates to be rolled out to paired regional at the same time.",
         d: "Utilizing regional pairs ensures that the recovery of one regional pairs is prioritized over every other pair.",
@@ -1076,7 +1076,7 @@ let score = 1;
 let wrong_answers = [];
 let correct_answers = [];
 
-const DEFAUT_QUESTIONS_NO = null;
+const DEFAUT_QUESTIONS_NO = 3;
 const QUESTIONS_NO = DEFAUT_QUESTIONS_NO || quizData.length - 1;
 
 loadQuiz();
@@ -1117,11 +1117,13 @@ submitBtn.addEventListener("click", (ev) => {
                 questionId: currentQuiz,
                 answerId: answer,
             });
+            console.log(correct_answers)
         } else {
             wrong_answers.push({
                 questionId: currentQuiz,
                 answerId: answer,
             });
+            console.log(wrong_answers)
         }
 
         if (currentQuiz < QUESTIONS_NO) {
@@ -1129,7 +1131,7 @@ submitBtn.addEventListener("click", (ev) => {
 			loadQuiz();
         } else {
             let wrongQuestionsText = [];
-            let wrongAnswersText = [];
+            let correctQuestionsText = [];
             wrong_answers.forEach((answer) => {
                 wrongQuestionsText.push(`<li class="wrongAnswerItem">
                 <p class="wrongQuestion">${
@@ -1138,19 +1140,29 @@ submitBtn.addEventListener("click", (ev) => {
                 <p class="wrongAnswer">selected wrong: ${
                     quizData[answer.questionId][answer.answerId]
                 }</p>
-				<p class="correctAnswer">correct: ${
-                    quizData[answer.questionId]
-                }</p>
                 </li>`);
-            });
+           });
+
+            correct_answers.forEach((answer) => {
+               correctQuestionsText.push(`<li class="wrongAnswerItem">
+               <p class="wrongQuestion">${
+                   quizData[answer.questionId].question
+               }</p>
+               <p class="wrongAnswer">correct: ${
+                   quizData[answer.questionId][answer.answerId]
+               }</p>
+               </li>`);
+           })
             quiz.innerHTML = `
             <div id="myDIV">
             <div id="content">
             <h2> You answer ${score}/${QUESTIONS_NO} question correctly</h2>
             
            <h3 class="correct_answers"> Wrong answers:${wrong_answers.length}</h3>
+           <h3 class="correct_answers"> Correct answers:${correct_answers.length}</h3>
             <ul class="wrongAnswerList">
                 ${wrongQuestionsText.join("<br>")}
+                ${correctQuestionsText.join("<br>")}
             </ul>
             </div>
             </div>
