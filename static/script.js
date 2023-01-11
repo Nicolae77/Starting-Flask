@@ -11,7 +11,7 @@ const quizData = [
     },
     {
         question:
-            "How can you use testing to predict outcomes in your cloud environment??",
+            "How can you use testing to predict outcomes in your cloud environment?",
         a: "By identifying the source of errors that are reported by users.",
         b: "By performing different functionality tests in pre-production and production environment.",
         c: "By excluding infrastructure deployment models from test plans.",
@@ -1145,10 +1145,10 @@ submitBtn.addEventListener("click", (ev) => {
 
             correct_answers.forEach((answer) => {
                correctQuestionsText.push(`<li class="wrongAnswerItem">
-               <p class="wrongQuestion">${
+               <p class="correctQuestion">${
                    quizData[answer.questionId].question
                }</p>
-               <p class="wrongAnswer">correct: ${
+               <p class="correctAnswer">correct: ${
                    quizData[answer.questionId][answer.answerId]
                }</p>
                </li>`);
