@@ -1060,6 +1060,15 @@ const quizData = [
         d: "fault domains",
         correct: "a",
     },
+    {
+        question:
+            "Which cloud service type is most suited to a lift and shift migration from an on-premises datacenter to a cloud deployment?",
+        a: "IaaS",
+        b: "PaaS",
+        c: "SaaS",
+        d: "FaaS",
+        correct: "a",
+    },
 ];
 
 const quiz = document.getElementById("quiz");
